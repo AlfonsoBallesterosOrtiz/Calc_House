@@ -1,0 +1,52 @@
+{
+  "metadatos": {
+    "sistema": "Calculadora de ISR Estimado por Venta de Inmuebles (Personas Físicas)",
+    "jurisdiccion": "México",
+    "fecha_revision": "2026",
+    "normativa_base": [
+      "Ley del Impuesto sobre la Renta (LISR) - Título IV, Capítulo IV (Arts. 93, 120-127) y Título V (Arts. 160, 174)",
+      "Resolución Miscelánea Fiscal (RMF 2026) - Anexo 8",
+      "Código Fiscal de la Federación (CFF) - Art. 9"
+    ]
+  },
+  "fuentes_datos": {
+    "url_ipc_csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQE6aYmYLBOGcSWvgBy8g62seNRKLYZ1zuy_xG53lwZxjhvBX_AEUonbBEJG03vYJSA1uVGwah7lT_Y/pub?gid=0&single=true&output=csv",
+    "url_udi_csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQItR8J8hKtqMQsOnars1F-JYlOCrHg-8B4QY-ydFW3is4ce1sKY-ESwl4zR62o3u72XPkvQ9anDT3F/pub?gid=0&single=true&output=csv",
+    "cache_ttl_segundos": 3600
+  },
+  "contacto": {
+    "whatsapp_numero": "525527602188",
+    "mensajes_whatsapp": {
+      "herencia_donacion": "Hola, tengo un inmueble adquirido por herencia/donación y busco una consulta personalizada para calcular mi ISR.",
+      "extranjero": "Hola, resido fuera de México. Vendí/venderé un inmueble en {precio_fmt} y busco la estrategia para optimizar la retención de ISR.",
+      "casa_exenta": "Hola, hice el cálculo estimado de ISR para mi casa habitación ({precio_fmt}) y califico para exención. Quiero confirmar los requisitos en una asesoría.",
+      "general": "Hola, coticé un ISR estimado de {isr_fmt} para la venta de un inmueble ({precio_fmt}) y quiero agendar una asesoría para revisar deducciones y estrategia."
+    }
+  },
+  "parametros_fiscales": {
+    "udis_exentas_casa_habitacion": 700000,
+    "periodicidad_exencion_anios": 3,
+    "proporcion_maxima_terreno_vs_construccion": 3.0,
+    "tasa_estimada_preliminar": 0.25,
+    "tasa_retencion_extranjero_bruta": 0.25,
+    "tasa_extranjero_ganancia_neta": 0.35,
+    "tasa_impuesto_entidad_federativa": 0.05,
+    "tope_anios_tenencia_acumulacion": 20,
+    "factor_actualizacion_minimo": 1.0,
+    "reglas_depreciacion_construccion": {
+      "proporcion_default_terreno": 0.20,
+      "proporcion_default_construccion": 0.80,
+      "tasa_demerito_anual": 0.03,
+      "remanente_minimo_construccion": 0.20,
+      "piso_minimo_costo_actualizado_vs_venta": 0.10
+    }
+  },
+  "textos_interfaz": {
+    "titulo": "Calculadora de ISR Estimado por Venta de Inmuebles",
+    "subtitulo": "Calcula en 1 minuto un estimado preliminar del impuesto aplicable a la venta de tu casa, departamento o terreno en México.",
+    "aviso_herencia": "Las adquisiciones por herencia o donación tienen reglas especiales sobre costo fiscal subrogado y exenciones que requieren revisión documental.",
+    "aviso_extranjero": "Por regla general del Título V, la ley prevé una retención del 25% sobre el precio de venta total. Sin embargo, si designas representante legal en México y formalizas ante fedatario, puedes optar por tributar sobre la ganancia neta y reducir sustancialmente el pago.",
+    "aviso_exencion_casa": "Este es un estimado preliminar que debe confirmarse comprobando requisitos formales ante notario (comprobantes de domicilio fiscales, no haber aplicado la exención en los últimos 3 años y proporción de terreno de hasta 3 veces la construcción).",
+    "aviso_general": "Esta cifra es una aproximación paramétrica con fines orientativos y no constituye una declaración formal ni sustituye el cálculo notarial definitivo (el cual contempla depreciación de construcción al 3% anual, tarifa progresiva del Anexo 8 RMF y entero del 5% estatal)."
+  }
+}
